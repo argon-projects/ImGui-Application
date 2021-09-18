@@ -1,17 +1,8 @@
-// DirectX-Application.cpp : Definiert den Einstiegspunkt für die Anwendung.
-//
-
 #include "pch.hpp"
-#include "DirectX-Application.h"
+#include "entry.hpp"
 
 #define MAX_LOADSTRING 100
 
-// Globale Variablen:
-HINSTANCE hInst;                                // Aktuelle Instanz
-WCHAR szTitle[MAX_LOADSTRING];                  // Titelleistentext
-WCHAR szWindowClass[MAX_LOADSTRING];            // Der Klassenname des Hauptfensters.
-
-// Vorwärtsdeklarationen der in diesem Codemodul enthaltenen Funktionen:
 
 #include "c_directx.hpp"
 
