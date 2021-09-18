@@ -22,7 +22,7 @@ void c_directx::initialise()
   //ImGui_ImplWin32_EnableDpiAwareness();
     WNDCLASSEX wc = { sizeof(WNDCLASSEX), CS_CLASSDC, c_directx::wnd_proc, 0L, 0L, GetModuleHandle(NULL), NULL, NULL, NULL, NULL, c_directx::window_class, NULL };
     ::RegisterClassEx(&wc);
-    c_directx::hwnd = ::CreateWindow(wc.lpszClassName, c_directx::window_name, WS_OVERLAPPEDWINDOW, 100, 100, 1280, 800, NULL, NULL, wc.hInstance, NULL);
+    c_directx::hwnd = ::CreateWindow(wc.lpszClassName, c_directx::window_name, WS_OVERLAPPEDWINDOW, 100, 100, 0, 0, NULL, NULL, wc.hInstance, NULL);
 
     // Initialize Direct3D
     if (!c_directx::create_d3d_device())
