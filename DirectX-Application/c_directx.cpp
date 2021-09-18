@@ -39,8 +39,7 @@ void c_directx::initialise()
     IMGUI_CHECKVERSION();
 
     ImFontAtlas fontAtlas;
-    auto defaultFont = c_ui_utils::load_font(fontAtlas, "segoeui.ttf", 22.0f);//16.0f * 96.0f / 72.0f);
-    c_ui_utils::load_font(fontAtlas, "fa-solid-900.ttf", 22.0f);//16.0f * 96.0f / 72.0f);
+    auto defaultFont = c_ui_utils::load_font(fontAtlas, "segoeui.ttf", 22.0f);
     fontAtlas.Build();
 
     ImGuiContext& im_context = *ImGui::CreateContext(&fontAtlas);
