@@ -32,7 +32,7 @@ void c_directx::initialise()
     }
 
     // Show the window
-    ::ShowWindow(hwnd, SW_SHOWMAXIMIZED);
+    //::ShowWindow(hwnd, SW_SHOWMAXIMIZED);
     ::UpdateWindow(hwnd);
 
     // Setup Dear ImGui context
@@ -94,7 +94,6 @@ void c_directx::initialise()
             ImGui::RenderPlatformWindowsDefault();
         }
 
-        // Start the Dear ImGui frame
         ImGui_ImplDX11_NewFrame();
         ImGui_ImplWin32_EnableDpiAwareness();
         ImGui_ImplWin32_NewFrame();
@@ -110,7 +109,7 @@ void c_directx::initialise()
         ImGui_ImplDX11_RenderDrawData(ImGui::GetDrawData());
 
         c_directx::d3d_swapchain->Present(1, 0); // Present with vsync
-        //g_pSwapChain->Present(0, 0); // Present without vsync
+        //c_directx::d3d_swapchain->Present(0, 0); // Present without vsync
     }
 
     // Cleanup
