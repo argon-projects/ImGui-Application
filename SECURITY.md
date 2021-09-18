@@ -11,4 +11,4 @@ ONLY the latest version is supported by security updates:
 
 ## Reporting a Vulnerability
 
-Create a Issue to Report your Vulnerability!
+Create a Issue to Report the Vulnerability!
