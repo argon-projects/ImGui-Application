@@ -8,11 +8,7 @@ ImFont* c_ui_utils::load_font(ImFontAtlas& atlas, const char* name, float size, 
 
     static const ImWchar ranges[] =
     {
-        //0x0020, 0x00FF, // LATEINUS SCHWANZIUS
-        //0x0104, 0x017C, // Die leute die alles klauen Char ranges
-        //0x400, 0x4FF,  // Vodka Char ranges
-        //0,
-        0x1, 0x1FFFF, 
+        0x1, 0x1FFFF, //All Ranges
         0
     };
 
