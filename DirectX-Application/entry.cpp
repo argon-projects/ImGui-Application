@@ -7,6 +7,7 @@ int APIENTRY wWinMain(_In_ HINSTANCE hInstance, _In_opt_ HINSTANCE hPrevInstance
     UNREFERENCED_PARAMETER(lpCmdLine);
 
     c_directx* d3d = new c_directx(L"ImGui test", L"ImGui test");
+    delete d3d;
 
     
     return 0;
