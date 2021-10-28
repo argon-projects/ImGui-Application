@@ -31,8 +31,7 @@ void c_directx::initialise()
         ::UnregisterClass(wc.lpszClassName, wc.hInstance);
     }
 
-    // Show the window
-    //::ShowWindow(hwnd, SW_SHOWMAXIMIZED);
+    //::ShowWindow(hwnd, SW_SHOWMAXIMIZED); ==> Now only the Viewport Windows are Rendering
     ::UpdateWindow(hwnd);
 
     // Setup Dear ImGui context
@@ -65,10 +64,6 @@ void c_directx::initialise()
     ImGui_ImplDX11_Init(c_directx::d3d_device, c_directx::d3d_device_context);
     ImGui_ImplWin32_EnableDpiAwareness();
   
-
-    // Our state
-    bool show_demo_window = true;
-    bool show_another_window = false;
     ImVec4 clear_color = ImVec4(0.45f, 0.55f, 0.60f, 1.00f);
 
     // Main loop
